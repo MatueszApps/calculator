@@ -8,21 +8,24 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <div id="display">12345</div>
+            <button class="digit" onclick="addToDisplay('1')">1</button>
+            <button class="digit" onclick="addToDisplay('2')"> 2 </button>
+            <button class="digit" onclick="addToDisplay('3')"> 3 </button>
+            <button class="digit" onclick="addToDisplay('4')"> 4 </button>
+            <button class="digit" onclick="addToDisplay('5')"> 5 </button>
+            <button class="digit" onclick="addToDisplay('6')"> 6 </button>
+            <button class="digit" onclick="addToDisplay('7')"> 7 </button>
+            <button class="digit" onclick="addToDisplay('8')"> 8 </button>
+            <button class="digit" onclick="addToDisplay('9')"> 9 </button>
+            <button onclick="calculate()">=</button>
+            <button class="operating" onclick="setOperation('+')">+</button>
+            <button class="operating" onclick="setOperation('-')"> - </button>
+            <button class="operating" onclick="setOperation('*')"> * </button>
+            <button class="operating" onclick="setOperation('/')"> / </button>
+            <button class="operating clear" onclick="clearDisplay()"> C </button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
