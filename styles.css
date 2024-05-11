@@ -16,6 +16,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Cztery kolumny */
     grid-gap: 10px;
+    width: 50%;
+    height: 80%;
 }
 
 /* Stylizacja wyświetlacza */
