@@ -1,0 +1,52 @@
+/* Podstawowe ustawienia dla całego kontenera */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+/* Stylizacja kalkulatora */
+.calculator {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cztery kolumny */
+    grid-gap: 10px;
+}
+
+/* Stylizacja wyświetlacza */
+#display {
+    grid-column: span 4; /* Wyświetlacz zajmuje całą szerokość */
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 5px;
+}
+
+/* Stylizacja przycisków */
+button {
+    background-color: #d00;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efekt hover dla przycisków */
+button:hover {
+    background-color: #ff3333;
+}
+
+/* Stylizacja przycisku clear */
+.clear {
+    grid-column: span 2; /* Przycisk C zajmuje dwie kolumny */
+}
